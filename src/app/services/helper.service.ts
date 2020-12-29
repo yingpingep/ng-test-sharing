@@ -23,6 +23,7 @@ export class HelperService {
           const matchArr = this.cats[id].match(/https:\/{2}(.*)\/.*ixid=(.*)/);
           const server = matchArr ? matchArr[1] : 'undefined';
           const ixid = matchArr ? matchArr[2] : 'undefined';
+          console.log('⚡⚡⚡', response.byteLength);
           return {
             server,
             ixid: ixid.split('&')[0],
