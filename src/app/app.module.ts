@@ -7,13 +7,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { DisplayWhenDirective } from './directives/display-when.directive';
 import { HelloComponent } from './hello/hello.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BannerComponent } from './ppt/banner/banner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     DisplayWhenDirective,
-    HelloComponent
+    HelloComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
