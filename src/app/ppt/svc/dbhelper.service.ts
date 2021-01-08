@@ -8,7 +8,7 @@ import { DbService, User } from './db.service';
 })
 export class DbhelperService {
   constructor(private db: DbService) {}
-  getUsers(departmentId: number): Observable<User[]> {
+  getUsersByDepartmentId(departmentId: number): Observable<User[]> {
     return this.db
       .getUsers()
       .pipe(
