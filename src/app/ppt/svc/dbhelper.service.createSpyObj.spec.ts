@@ -4,7 +4,7 @@ import { DbService } from './db.service';
 
 import { DbhelperService } from './dbhelper.service';
 
-describe('DbhelperService', () => {
+describe('DbhelperService using createSpyObj', () => {
   let dbService: DbService;
   let service: DbhelperService;
 
