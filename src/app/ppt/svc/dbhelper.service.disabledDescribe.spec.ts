@@ -4,7 +4,7 @@ import { DbService } from './db.service';
 
 import { DbhelperService } from './dbhelper.service';
 
-describe('DbhelperService using createSpyObj', () => {
+xdescribe('Showing what xdescribe can do', () => {
   let dbService: DbService;
   let service: DbhelperService;
 
@@ -51,7 +51,7 @@ describe('DbhelperService using createSpyObj', () => {
     });
   });
 
-  xit('should only return users where their departmentId are 2', () => {
+  it('should only return users where their departmentId are 2', () => {
     service.getUsersByDepartmentId(1).subscribe((users) => {
       users.forEach((user) => {
         expect(user.departmentId).toBe(2);
